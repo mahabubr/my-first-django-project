@@ -1,0 +1,10 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+{% for f in feature %}
+<div>
+    <p>{{f.name}}</p>
+    <p>{{f.details}}</p>
+</div>
+{% endfor %}
